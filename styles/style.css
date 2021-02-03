@@ -1,0 +1,457 @@
+html {
+  font-family: Montserrat;
+  font-size: 1px;
+  line-height: 1px;
+
+  letter-spacing: 1px;
+}
+
+/*BODY*/
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/*MENU*/
+
+menu {
+  position: fixed;
+  left: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 70px;
+
+  opacity: .85;
+  background-color: #000;
+}
+
+menu:hover .menu__item:not(.menu__item:hover) {
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  menu {
+    left: 0;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: auto;
+    height: 100%;
+
+    opacity: 1;
+    background-color: #202020;
+  }
+}
+
+/*MENU__ITEM*/
+
+.menu__item {
+  font-size: 14rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25%;
+  height: 100%;
+
+  color: #7c7c7c;
+}
+
+.menu__item:hover {
+  color: #000;
+  background-color: #c6c6c6;
+}
+
+@media screen and (min-width: 900px) {
+  .menu__item {
+    font-size: 12rem;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 120px;
+    height: 100px;
+
+    color: #fff;
+  }
+
+  .menu__item:hover,
+  .menu__item_active {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .menu__item_active:hover {
+    color: #000;
+    background-color: #c6c6c6;
+  }
+
+  .menu__item:before {
+    font-family: FontAwesome;
+    font-size: 35rem;
+  }
+
+  .menu__item-logo_home:before {
+    content: '\f015';
+  }
+
+  .menu__item-logo_about:before {
+    content: '\f007';
+  }
+
+  .menu__item-logo_photos:before {
+    content: '\f06e';
+  }
+  .menu__item-logo_contact:before {
+    content: '\f0e0';
+  }
+}
+
+/*CONTENT*/
+
+content {
+  margin-top: 90px;
+  padding: 0 20px 20px;
+}
+
+@media screen and (min-width: 9 00px) {
+  content {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: 120px;
+  }
+}
+
+.my-info {
+  font-size: 15rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.infoblock {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-bottom: 40px;
+
+  /*outline: 1px solid pink;*/
+}
+
+.infoblock__heading {
+  color: #ececec;
+}
+
+.heading_h1 {
+  font-size: 30rem;
+}
+
+.heading_h2 {
+  font-size: 25rem;
+}
+
+.infoblock__heading_underline {
+  width: 200px;
+  height: 1px;
+  margin-top: 20px;
+
+  background-color: #868686;
+}
+
+.infoblock__content {
+  margin-top: 25px;
+}
+
+/*INFOBLOCK_HEADER*/
+
+.infoblock_header {
+  align-items: center;
+}
+
+.heading_header {
+  font-size: 60rem;
+
+  letter-spacing: 3rem;
+}
+
+.header_prefix {
+  font-size: 0;
+}
+
+@media screen and (min-width: 613px) {
+  .header_prefix {
+    font-size: 60rem;
+  }
+}
+
+.content_header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.text_header {
+  font-size: 14rem;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+}
+
+/*INFOBLOCK_MY-NAME*/
+
+.text_my-name {
+  line-height: 20rem;
+
+  text-align: justify;
+
+  color: #666;
+}
+
+/*INFOBLOCK_MY-SKILLS*/
+.content_my-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-skills__block {
+  margin-bottom: 20px;
+}
+
+.skills__skill:not(.skill_photography) {
+  margin-top: 20px;
+}
+
+.skills__skill > span {
+  letter-spacing: 5rem;
+
+  color: #666;
+}
+
+.slider {
+  height: 25px;
+  margin-top: 15px;
+}
+
+.slider_white {
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.slider_grey {
+  background-color: #666;
+}
+
+.slider_grey_photography {
+  width: 91%;
+}
+
+.slider_grey_web-design {
+  width: 70%;
+}
+
+.slider_grey_photoshop {
+  width: 81%;
+}
+
+/*----------*/
+
+.stats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 20px;
+  padding: 30px 0;
+
+  background-color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  .stats {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 40px 0;
+  }
+}
+
+.stats__indicator {
+  font-size: 14rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .stats__indicator {
+    margin-bottom: 0;
+  }
+}
+
+.stats__indicator__prefix {
+  font-size: 20rem;
+
+  margin-bottom: 10px;
+}
+
+/*----------*/
+
+.download-btn {
+  font-family: Montserrat;
+  font-size: 14rem;
+
+  margin-top: 10px;
+  padding: 15px 20px;
+
+  background-color: #fff;
+}
+
+.download-btn:hover {
+  background-color: #ccc;
+}
+
+.download-btn:before {
+  font-family: FontAwesome;
+
+  margin-right: 5px;
+
+  content: '\f019';
+}
+
+/*INFOBLOCK_MY-PRICE*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.services__type {
+  opacity: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .services__type {
+    width: 49%;
+    margin-top: 15px;
+
+    opacity: .5;
+  }
+}
+
+.services__type:hover {
+  opacity: 1;
+}
+
+.services__type_pro {
+  margin-top: 15px;
+}
+
+.service__text {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  background-color: #fff;
+}
+
+.service__text_normal {
+  font-size: 13rem;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.service__text_header {
+  font-size: 21rem;
+
+  color: #fff;
+  background-color: #585858;
+}
+
+.service__text_price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.service__text_price__amount {
+  font-size: 25rem;
+}
+
+.service__text_price__duration {
+  font-size: 13rem;
+
+  margin-top: 15px;
+
+  color: #5d5d5d;
+}
+
+
+.service__text_footer {
+  background-color: #efefef;
+}
+
+.service__text_btn {
+  font-family: Montserrat;
+
+  padding: 15px 20px;
+
+  background-color: #fff;
+}
+
+.service__text_btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+header img {
+  width: 100%;
+}
