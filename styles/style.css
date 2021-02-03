@@ -219,6 +219,7 @@ content {
 /*INFOBLOCK_MY-NAME*/
 
 .text_my-name {
+  font-size: 14rem;
   line-height: 20rem;
 
   text-align: justify;
