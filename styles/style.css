@@ -572,34 +572,42 @@ content {
 }
 
 .contacts__contact {
-  color: #626464;
-  margin-left: 20px;
   margin-top: 8px;
+  margin-left: 20px;
+}
+
+.contact_text {
   letter-spacing: 1rem;
+
+  color: #626464;
 }
 
 .contacts_before {
   width: 30px;
+
   text-align: center;
 }
 .contacts_before:before {
   font-family: FontAwesome;
   font-size: 30rem;
+
   color: #fff;
 }
 
-.contact-str_1, .contact-str_2, .contact-str_3 {
+.contact-str_1,
+.contact-str_2,
+.contact-str_3 {
   display: flex;
 }
 
 .location_before:before {
-  content: "\f041";
+  content: '\f041';
 }
 
 .phone_before:before {
-  content: "\f095";
+  content: '\f095';
 }
 
 .email_before:before {
-  content: "\f0e0";
+  content: '\f0e0';
 }
