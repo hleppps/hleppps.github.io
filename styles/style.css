@@ -15,7 +15,7 @@ body {
   background-color: black;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   body {
     flex-direction: row;
     justify-content: center;
@@ -42,7 +42,7 @@ menu:hover .menu__item:not(.menu__item:hover) {
   color: #fff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   menu {
     left: 0;
 
@@ -77,7 +77,7 @@ menu:hover .menu__item:not(.menu__item:hover) {
   background-color: #c6c6c6;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .menu__item {
     font-size: 12rem;
 
@@ -130,7 +130,7 @@ content {
   padding: 0 20px 20px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   content {
     max-width: 1200px;
     margin-top: 100px;
@@ -302,7 +302,7 @@ content {
   background-color: #fff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .stats {
     align-items: center;
     flex-direction: row;
@@ -323,7 +323,7 @@ content {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .stats__indicator {
     margin-bottom: 0;
   }
@@ -366,7 +366,7 @@ content {
   flex-direction: column;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .services {
     flex-direction: row;
     justify-content: space-between;
@@ -377,7 +377,7 @@ content {
   opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .services__type {
     width: 49%;
     margin-top: 15px;
@@ -463,7 +463,7 @@ content {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .reviews {
     max-width: 500px;
   }
@@ -482,7 +482,7 @@ content {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .reviewer-photo {
     width: 100px;
     height: 100px;
@@ -493,7 +493,7 @@ content {
   color: #6c6c6c;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .text_my-reputation {
     font-size: 14rem;
   }
@@ -520,7 +520,7 @@ content {
   font-size: 16rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .review-information_second-line {
     margin-bottom: 15px;
   }
@@ -530,7 +530,7 @@ content {
   font-size: 13rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .review-information_name {
     font-size: 18rem;
   }
@@ -540,7 +540,7 @@ content {
   font-size: 12rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .review-information_position {
     font-size: 15rem;
   }
@@ -548,7 +548,7 @@ content {
 
 /*INFOBLOCK_MY-PHOTOS*/
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .content__photo-columns {
     display: flex;
     justify-content: space-between;
@@ -561,7 +561,7 @@ content {
   width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
   .content__column {
     width: 49%;
   }
