@@ -465,10 +465,17 @@ content {
 }
 
 .reviewer-photo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 
   border-radius: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .reviewer-photo {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .text_my-reputation {
@@ -492,8 +499,8 @@ content {
 
 .review-information_first-line {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
 
   margin-top: 15px;
 }
@@ -534,6 +541,7 @@ content {
   .content__photo-columns {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 20px;
   }
 }
@@ -553,3 +561,45 @@ content {
   margin-bottom: 10px;
 }
 
+/*INFOBLOCK_CONTACT-ME*/
+
+.contact-str {
+  margin-bottom: 10px;
+}
+
+.contact_link {
+  display: block;
+}
+
+.contacts__contact {
+  color: #626464;
+  margin-left: 20px;
+  margin-top: 8px;
+  letter-spacing: 1rem;
+}
+
+.contacts_before {
+  width: 30px;
+  text-align: center;
+}
+.contacts_before:before {
+  font-family: FontAwesome;
+  font-size: 30rem;
+  color: #fff;
+}
+
+.contact-str_1, .contact-str_2, .contact-str_3 {
+  display: flex;
+}
+
+.location_before:before {
+  content: "\f041";
+}
+
+.phone_before:before {
+  content: "\f095";
+}
+
+.email_before:before {
+  content: "\f0e0";
+}
