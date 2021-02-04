@@ -126,6 +126,7 @@ menu:hover .menu__item:not(.menu__item:hover) {
 
 content {
   margin-top: 90px;
+  margin-bottom: 10px;
   padding: 0 20px 20px;
 }
 
@@ -149,9 +150,14 @@ content {
   flex-direction: column;
 
   width: 100%;
-  margin-bottom: 40px;
+}
 
-  /*outline: 1px solid pink;*/
+.infoblock_menu {
+  margin-top: 80px;
+}
+
+.infoblock:not(.infoblock_header, .infoblock_menu) {
+  margin-top: 50px;
 }
 
 .infoblock__heading {
@@ -221,6 +227,10 @@ content {
 }
 
 /*INFOBLOCK_MY-NAME*/
+
+.infoblock_my-name {
+  /*margin-top: 50px;*/
+}
 
 .text_my-name {
   font-size: 14rem;
@@ -667,5 +677,32 @@ content {
 
   content: '\f1d8';
 
-  color: #grey;
+  color: #000;
+}
+
+/*FOOTER*/
+
+footer {
+  margin-top: 100px;
+}
+
+.footer_fa-items {
+  margin-top: 10px;
+}
+
+.footer_fa {
+  font-family: FontAwesome;
+  font-size: 25rem;
+
+  margin-right: 5px;
+
+  color: #6c6c6c;
+}
+
+.footer__text {
+  font-size: 12rem;
+
+  letter-spacing: .8rem;
+
+  color: #626464;
 }
