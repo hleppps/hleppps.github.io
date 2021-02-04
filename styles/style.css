@@ -481,8 +481,6 @@ content {
 
   width: 100%;
   padding-left: 20px;
-
-  border: 1px solid pink;
 }
 
 .review-information_first-line {
@@ -490,8 +488,6 @@ content {
   justify-content: space-between;
 
   margin-top: 15px;
-
-  border: 1px solid red;
 }
 
 @media screen and (min-width: 900px) {
@@ -502,4 +498,29 @@ content {
 
 .review-information_name {
   font-size: 17rem;
+}
+
+/*INFOBLOCK_MY-PHOTOS*/
+
+@media screen and (min-width: 900px) {
+  .content__photo-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+.content__column {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .content__column {
+    width: 49%;
+  }
+}
+
+.my-photos__photo {
+  width: 100%;
+  margin-bottom: 10px;
 }
