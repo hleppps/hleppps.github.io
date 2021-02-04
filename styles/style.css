@@ -232,6 +232,7 @@ content {
 }
 
 /*INFOBLOCK_MY-SKILLS*/
+
 .content_my-skills {
   display: flex;
   flex-direction: column;
@@ -610,4 +611,61 @@ content {
 
 .email_before:before {
   content: '\f0e0';
+}
+
+/*FEEDBACK-FORM*/
+
+.content__feedback {
+  margin-top: 10px;
+}
+
+.feedback__text {
+  font-size: 12rem;
+
+  letter-spacing: .8rem;
+
+  color: #626464;
+}
+
+.feedback__contact-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15px;
+}
+
+.form_item {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 10px;
+
+  outline: none;
+  text-shadow: 0 0 0 black;
+}
+
+.form_item:focus {
+  outline: 1px ridge grey; /*!important*/
+}
+
+.form_button {
+  font-size: 13rem;
+
+  width: 150px;
+  padding: 10px 0;
+}
+
+.form_button:hover {
+  background-color: #c6c6c6;
+}
+
+.form_button:before {
+  font-family: FontAwesome;
+  font-size: 12rem;
+
+  margin-right: 5px;
+
+  content: '\f1d8';
+
+  color: #grey;
 }
