@@ -178,6 +178,10 @@ content {
   margin-top: 25px;
 }
 
+.infoblock__image {
+  width: 100%;
+}
+
 /*INFOBLOCK_HEADER*/
 
 .infoblock_header {
@@ -209,7 +213,7 @@ content {
 }
 
 .text_header {
-  font-size: 14rem;
+  font-size: 17rem;
 
   margin-bottom: 20px;
 
@@ -441,18 +445,57 @@ content {
   background-color: #000;
 }
 
+/*INFOBLOCK_MY-REPUTATION*/
 
+.reviews {
+  max-width: 400px;
+  margin-top: 30px;
+}
 
+@media screen and (min-width: 900px) {
+  .reviews {
+    max-width: 500px;
+  }
+}
 
+.reviews__review {
+  display: flex;
 
+  margin-bottom: 30px;
+}
 
+.reviewer-photo {
+  width: 20%;
 
+  border-radius: 50%;
+}
 
+.text_my-reputation {
+  color: #6c6c6c;
+}
 
+.review-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  padding-left: 20px;
+}
 
+.review-information_first-line {
+  display: flex;
+  justify-content: space-between;
 
-
-header img {
   width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .review-information_second-line {
+    margin-bottom: 15px;
+  }
+}
+
+.review-information_name {
+  font-size: 17rem;
 }
