@@ -200,6 +200,12 @@ content {
   letter-spacing: 3rem;
 }
 
+@media screen and (max-width: 385px) {
+  .heading_header {
+    text-align: center;
+  }
+}
+
 .header_prefix {
   font-size: 0;
 }
@@ -224,6 +230,12 @@ content {
   margin-bottom: 20px;
 
   color: #fff;
+}
+
+@media screen and (max-width: 385px) {
+  .text_header {
+    text-align: center;
+  }
 }
 
 /*INFOBLOCK_MY-NAME*/
