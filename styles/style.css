@@ -153,7 +153,7 @@ content {
 }
 
 .infoblock_menu {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .infoblock:not(.infoblock_header, .infoblock_menu) {
