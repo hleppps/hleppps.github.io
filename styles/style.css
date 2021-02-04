@@ -671,10 +671,17 @@ content {
 }
 
 .form_button {
-  font-size: 13rem;
+  font-size: 10rem;
 
   width: 150px;
   padding: 10px 0;
+  background-color: #fff;
+}
+
+@media screen and (orientation: landscape) {
+  .form_button {
+    font-size: 13rem;
+  }
 }
 
 .form_button:hover {
